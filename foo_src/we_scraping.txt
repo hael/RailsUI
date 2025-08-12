@@ -1,0 +1,7 @@
+### Static web scraping
+HTTParty
+Nokogiri
+CSV
+
+### Dynamic web scraping
+Selenium
