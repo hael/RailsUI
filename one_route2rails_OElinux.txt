@@ -1,0 +1,25 @@
+google search: setting up a ryby on rails development environment in oracle linux enterprise
+
+sudo dnf update -y
+sudo dnf groupinstall "Development Tools" -y
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+mkdir ~/tmp
+add 2 .bashrc: export TMPDIR="$HOME/tmp"
+
+rbenv install 3.0.0
+rbenv global 3.0.0
+
+gem install bundler
+
+gem install rails
+rbenv rehash
+

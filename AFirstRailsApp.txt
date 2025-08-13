@@ -1,3 +1,17 @@
 A first rails app
 
 rails new hello_app --skip-bundle
+bundle install
+
+ERROR
+
+https://yum.oracle.com/repo/OracleLinux/OL8/codeready/builder/developer/x86_64/
+sudo yum install libyaml-devel-0.1.7-5.el8.x86_64.rpm
+
+bundle install WORKS
+
+Added to config/environments/development.rb:
+#Allow connections to local server
+config.hosts.clear
+
+

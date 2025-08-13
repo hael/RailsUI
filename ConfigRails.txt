@@ -13,3 +13,7 @@ sudo gem install rails
 gem update --system 3.7.1
 
 gem install bundler
+
+Configuration of rails on Linux
+
+sudo yum install ruby
