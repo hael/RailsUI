@@ -1,0 +1,3 @@
+A first rails app
+
+rails new hello_app --skip-bundle
